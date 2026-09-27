@@ -1,0 +1,57 @@
+{
+  "project": "VietLegal-RAG v2.1",
+  "status": "PORTFOLIO_BENCHMARK_FROZEN",
+  "evaluation_split": "V2 Dev600",
+  "query_count": 600,
+  "release_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 608,
+      "sha256": "350e8291ad350c00a4547e2b17074968f02e3de9351f4667dd5c47df990e719e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5026,
+      "sha256": "de2bf09f44a35b08c78ac49dd91ce13f9d444a02d1185b9e466ad9d44d97c78a"
+    },
+    {
+      "path": "demo/README.md",
+      "bytes": 704,
+      "sha256": "baf9f35a66c91b6672f0d704b0abf549ce266d053a36957b11550c920a326cff"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1218,
+      "sha256": "bf1132679313f6a3b509c7a98f1ad51626b96771d51a66c0c880fbda7bcfd907"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 3143,
+      "sha256": "b05051227891275e6696c750f6e85a64fef6716d57413055bb375de077b54ec5"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "bytes": 1135,
+      "sha256": "f3366809420905ae54527885e1879174ad0d53c385365688efb486de36671940"
+    },
+    {
+      "path": "results/final_portfolio_benchmark.csv",
+      "bytes": 1809,
+      "sha256": "74053085fd355f0a5de2ce5c29d1e61da38648f35ab5287e8f5c79e25ffb5490"
+    },
+    {
+      "path": "results/final_portfolio_benchmark.json",
+      "bytes": 6540,
+      "sha256": "7684bd36215e37552ec1294a08c216221c6cc18eb8eba82159256b443050d023"
+    }
+  ],
+  "excluded_from_release": [
+    "legal corpus",
+    "competition train/test data",
+    "Oracle training data",
+    "private/public submissions",
+    "model checkpoints",
+    "LoRA adapters",
+    "temporary experiment artifacts"
+  ]
+}

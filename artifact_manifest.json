@@ -1,0 +1,942 @@
+{
+  "project": "VietLegal-RAG",
+  "manifest_version": "1.0",
+  "artifact_layout": "all paths relative to runtime artifact root",
+  "base_models": [
+    {
+      "model": "AITeamVN/Vietnamese_Embedding_v2",
+      "revision": "18b44161e041bf1d3a333ab5144b5b7b93f914d2"
+    },
+    {
+      "model": "mainguyen9/vietlegal-harrier-0.6b",
+      "revision": "9dc54de4a363ae03cbcec2dcf553ad592562ec85"
+    },
+    {
+      "model": "AITeamVN/Vietnamese_Reranker",
+      "revision": "f536976248403314225d7fdfdbc87f0e9516a54e"
+    },
+    {
+      "model": "Qwen/Qwen3.5-2B",
+      "revision": null
+    }
+  ],
+  "file_count": 151,
+  "total_size_bytes": 4930429361,
+  "files": [
+    {
+      "path": "retrieval_cache/vietnamese_embedding_v2_parent/parent_embeddings_fp32.npy",
+      "size_bytes": 34865280,
+      "sha256": "cb57eb896f0615d5a14e2903defc3ad04ddbe83e8b803fc3ba7bb42d3c62ba4f",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietnamese_embedding_v2_parent/parent_embeddings_fp32.npy"
+    },
+    {
+      "path": "retrieval_cache/vietnamese_embedding_v2_parent/parent_metadata.json",
+      "size_bytes": 2272835,
+      "sha256": "bc9bb3ef912a6752a0f251e32e227cfb59fff78a34c6d0912b18ac581d6390bb",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietnamese_embedding_v2_parent/parent_metadata.json"
+    },
+    {
+      "path": "retrieval_cache/vietnamese_embedding_v2_parent/cache_meta.json",
+      "size_bytes": 222,
+      "sha256": "e458ae8f24e5ed969afb6b47a30f228deb66df59f9793a5a1fd99439db86ef7d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietnamese_embedding_v2_parent/cache_meta.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0000.npy",
+      "size_bytes": 33554560,
+      "sha256": "34235434e349318fbadc4898a9cb41772731d489f999b3bf93016166c6729554",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0000.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0001.npy",
+      "size_bytes": 33554560,
+      "sha256": "55ef3493710749d831e45d7770e3a0bac03175f83318470c4d0c4d9b062d830f",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0001.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0002.npy",
+      "size_bytes": 33554560,
+      "sha256": "34a0d37216e0d2f716df37d8f1625e135a748ceb5bee609cea7c4bb87f2b886c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0002.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0003.npy",
+      "size_bytes": 33554560,
+      "sha256": "ac16150a8af3d8647ec878a25a044f3383fd70925e10e470d4e1fccccd4402a4",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0003.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0004.npy",
+      "size_bytes": 33554560,
+      "sha256": "0f93cd9700c08ce7ba4ba7bc0ce22d4e265b9201e8309765c7f124671e054632",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0004.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0005.npy",
+      "size_bytes": 33554560,
+      "sha256": "648adfe9a0293fe282343806bab86738ed73e5ebe97dcc3360b71e695da928f0",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0005.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0006.npy",
+      "size_bytes": 33554560,
+      "sha256": "37df2b1b595d75ee793e3bc306c97bb2333c0ee576c4710c4c0bc813cd186046",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0006.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0007.npy",
+      "size_bytes": 33554560,
+      "sha256": "57869aabfafce7d60ed5a91314f2bc9468db40c7cfdd4eb8df41882bbdb4128f",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0007.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0008.npy",
+      "size_bytes": 33554560,
+      "sha256": "dfca56d76d1cc2bf541b07e3132e870f4630ed53615f2980db32a62c4580ea65",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0008.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0009.npy",
+      "size_bytes": 33554560,
+      "sha256": "164ec6f641531e2a1c6dd466b3fefac0b5efa7850ab017cbd5c97860395c8715",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0009.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0010.npy",
+      "size_bytes": 33554560,
+      "sha256": "58d626068f9b51ad492ae8633ce558f6d3e597cb539b44ffcbda5efcf1d9fa5f",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0010.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0011.npy",
+      "size_bytes": 33554560,
+      "sha256": "b2de4f58f759865419f47bc57c92b82d03d03c9b63ed8916e72b315e861467bc",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0011.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0012.npy",
+      "size_bytes": 33554560,
+      "sha256": "b64fb294e19464742b77de215adcd1b09994cf90b4a4c122a37a472e3aa39ad2",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0012.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0013.npy",
+      "size_bytes": 33554560,
+      "sha256": "8f8e049da2a775a8d30d40af1b90f201683c0f95c0f579d0d094425759452118",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0013.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0014.npy",
+      "size_bytes": 33554560,
+      "sha256": "48a8c68b32a2d09166b6770a6f150d69848c8de83bf6f62a03924f2d1d181423",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0014.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0015.npy",
+      "size_bytes": 33554560,
+      "sha256": "6cc7e1bf3279fcc9938917ffafafd27b826a70aee70aead94cdb8737e7e2dc04",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0015.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0016.npy",
+      "size_bytes": 33554560,
+      "sha256": "f84d470d8db60055872a2cbc4b93f55cca05340409f226c5877823df6bba176c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0016.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0017.npy",
+      "size_bytes": 33554560,
+      "sha256": "223f9e69b789ac041b3ec0e8ede28270c8264c861942983974fff826e5164237",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0017.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0018.npy",
+      "size_bytes": 33554560,
+      "sha256": "267ce0b63dd70cf3987207cfc39c5d7bb395c9b293716e0b3090e8965efc36a0",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0018.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0019.npy",
+      "size_bytes": 33554560,
+      "sha256": "4b8fb010a8612660f5024ad5f64c9e71cb9e9a1b16b99221870bd529d71505bf",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0019.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0020.npy",
+      "size_bytes": 33554560,
+      "sha256": "54a4e6f04583d65c95b003e59587ce018964736dc127e80122eaebc6ce9d2cf6",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0020.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0021.npy",
+      "size_bytes": 33554560,
+      "sha256": "44b9789e928f362d8e7e82be2c29cf132644901094bcc7be8849f95c45d205f5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0021.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0022.npy",
+      "size_bytes": 33554560,
+      "sha256": "316dc6b53b1e3437b78b0ad19f53a04ab1641abcfa93524c3d849205a80e02af",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0022.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0023.npy",
+      "size_bytes": 33554560,
+      "sha256": "1378787a8f00074d64d69288178d9606887f52e6dfd53d738c97e4d9512bfd1d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0023.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0024.npy",
+      "size_bytes": 33554560,
+      "sha256": "9546aa356ea5ba1c9ab91654b5bc310737f44ffbae6b27329d055479dd8d81bc",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0024.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0025.npy",
+      "size_bytes": 33554560,
+      "sha256": "f292548199fbf1f7f7bb4509f87b72389ce1d7aab9f2fa8c194962a59938bab7",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0025.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0026.npy",
+      "size_bytes": 33554560,
+      "sha256": "69f0f716fb9a97070e4f6111c97a7370ae6e7d1ea900ad9983f32fb64e5604e5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0026.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0027.npy",
+      "size_bytes": 33554560,
+      "sha256": "63b6043bc64958810f17328cd8f06cae13624858c09fe70e3bdcf0f484f8a381",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0027.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0028.npy",
+      "size_bytes": 33554560,
+      "sha256": "6232b79b0cf0eebba1446145d5972c2eca4e58d6e73e0749dd5924ffa6d3d8b2",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0028.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0029.npy",
+      "size_bytes": 33554560,
+      "sha256": "5e97031e12e77f4c7f2e48bf0b73cbe3b54be20e1b2856d153df1c94c82ef8c8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0029.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0030.npy",
+      "size_bytes": 33554560,
+      "sha256": "d31676b94de4ffff30ce8b8e82af11c908558ca50be265b74179374f369ab83e",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0030.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0031.npy",
+      "size_bytes": 33554560,
+      "sha256": "fb3ee44b0eadcf0cb7d51658f3bcfed3cd3892416dc8179e699c45095eee6bec",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0031.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0032.npy",
+      "size_bytes": 33554560,
+      "sha256": "74e24f83863446c6762c44197d4705455fd6f095a99b70193ba796dfc764753b",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0032.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0033.npy",
+      "size_bytes": 33554560,
+      "sha256": "2873dd0dd3297306eb8cbe3e51d9cafd597c39d195493163bba6838bbf358578",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0033.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0034.npy",
+      "size_bytes": 33554560,
+      "sha256": "5e549edc032e5c9f04e1ee49ea051a53e2c38efa774bf3e50f34989dedff94ab",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0034.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0035.npy",
+      "size_bytes": 33554560,
+      "sha256": "4750bc4f81928e4b2777cbd2cbcd16d5f5131886ae0098cbbf968ab53642081b",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0035.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0036.npy",
+      "size_bytes": 33554560,
+      "sha256": "46c86a2dc6791346e01379c7bcea372b92f530e9089168081c7ff2b81899a9e7",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0036.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0037.npy",
+      "size_bytes": 33554560,
+      "sha256": "bdd780c78da8d47ba9d54d4dbc8f42a3b31abe91fdebfda3f7aa3522fd5939de",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0037.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0038.npy",
+      "size_bytes": 33554560,
+      "sha256": "d65ded51fd244b87ace08b8c66a524211deed1c3bc154fbc1a9d0991e4845ccf",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0038.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0039.npy",
+      "size_bytes": 33554560,
+      "sha256": "47e1f255c173b88e3ef489e880519207822b7e6aa73358dee73e6000fb5cfd70",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0039.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0040.npy",
+      "size_bytes": 33554560,
+      "sha256": "ed9ecd1688046cceb7f183407bfaef9c0c66193a84acfef6a4e844b8e46b7d91",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0040.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0041.npy",
+      "size_bytes": 33554560,
+      "sha256": "44932be9394de7400431a1404566e338d221d6fa7fecc52ed46d4bc23eab619d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0041.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0042.npy",
+      "size_bytes": 33554560,
+      "sha256": "f4b9a6c10989fe267f88ed1a9af5c785d1b79beb4a91e6cbe52fd2d2a50da812",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0042.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0043.npy",
+      "size_bytes": 33554560,
+      "sha256": "b313cf03b32c8fe54b1bf42089632bb2e1ac106c1a18aa9d07f2cb5cf35668d8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0043.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0044.npy",
+      "size_bytes": 33554560,
+      "sha256": "53da7d1d9ac33dcc922dcfc993cce29f15fa18d32b73a90ae562ea77265605d7",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0044.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0045.npy",
+      "size_bytes": 33554560,
+      "sha256": "91857e186ba6ddef2eff11bba64511c7dd4e127bf22e88874932baf639d55329",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0045.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0046.npy",
+      "size_bytes": 33554560,
+      "sha256": "46f4fbcd9dd7183a4ba032021e6e40898e88c557eae13f131812c12a32c4e293",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0046.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0047.npy",
+      "size_bytes": 33554560,
+      "sha256": "5f317773d70e01180d2eca1e4dd215b56efa07b65b598cd27d39f5a5be04d867",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0047.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0048.npy",
+      "size_bytes": 33554560,
+      "sha256": "df620ccdbdc8e29ea92f755db6421fd930482ec3bbe19bc82da819b074343fe0",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0048.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0049.npy",
+      "size_bytes": 33554560,
+      "sha256": "6dcefaf4285584db31557b086a8158644cea6483d6fa5e07baf2a6a08c9a99b3",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0049.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0050.npy",
+      "size_bytes": 33554560,
+      "sha256": "3be9fcc62e9937a412e41e1dabc854b7c4b7b165b037cecfefec069507065ca4",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0050.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0051.npy",
+      "size_bytes": 33554560,
+      "sha256": "fa4a686dc92be738e4bedd046d7469909aed0abadec6bbd69afbd748a89aade5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0051.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0052.npy",
+      "size_bytes": 33554560,
+      "sha256": "ba478df32ccef10c7903ba70e6781cd864fbd73011b3e399a0401b561f068e6e",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0052.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0053.npy",
+      "size_bytes": 33554560,
+      "sha256": "7c2b37b7a40be3cb95445d49d5e3e64da27e6e8d123c686230a236fa46b83b44",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0053.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0054.npy",
+      "size_bytes": 33554560,
+      "sha256": "af08ad36fc752977eb6f2f0f42a2dcc9a83feddeb6001eb7f404fc305c59767c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0054.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0055.npy",
+      "size_bytes": 33554560,
+      "sha256": "1c502ece232f42f9151bbc8159d7edef9c6823f01fb28c850b79157088293311",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0055.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0056.npy",
+      "size_bytes": 33554560,
+      "sha256": "60d42310029da94d522b2391cf784ab9ff82614844811cd47fd127e6d2699517",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0056.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0057.npy",
+      "size_bytes": 33554560,
+      "sha256": "be0d079120f1e25149d6354e76fb3dc563de5970fe1508100ecd17f7e0f4c5b6",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0057.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0058.npy",
+      "size_bytes": 33554560,
+      "sha256": "3a1a3703cbb186a13b1be31f794109433ae6a77758287d63c7bab140ecba8bb4",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0058.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0059.npy",
+      "size_bytes": 33554560,
+      "sha256": "eb6676ba06daaed24d6fd9648034bff842de7ea5eeba7cb19956d438330f6aba",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0059.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0060.npy",
+      "size_bytes": 33554560,
+      "sha256": "370d738f15556777d621222949e5d99999210234927ba0339bc4e04f6c705235",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0060.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0061.npy",
+      "size_bytes": 33554560,
+      "sha256": "b8b0302da3027e1f3b0ef0ee906d1bd06d23c92f1ebe7acd781204a5cea16169",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0061.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0062.npy",
+      "size_bytes": 33554560,
+      "sha256": "3cc2837659d2253b8f883510033cbd1bc2416c40cbd3e4e927247c39ccbd65cf",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0062.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0063.npy",
+      "size_bytes": 18395264,
+      "sha256": "8bd3b60aacaba6d85afb494f53af2fc7bcdd65f07cf9802fd871a9da39ff5cb3",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_shards_fp32/harrier_chunk_emb_0063.npy"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0000.json",
+      "size_bytes": 628884,
+      "sha256": "a488e9965d322361905b248e00f89f55fb677d5858d3cb3fff2a55e934fc68ee",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0000.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0001.json",
+      "size_bytes": 636452,
+      "sha256": "c2512f4562ab5750272e964e7dadc0853558f75330a77838556feebd38846a0a",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0001.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0002.json",
+      "size_bytes": 636946,
+      "sha256": "c776ed19f58b500abdec2cb847d49850eab3cca5cb8c94e25069d181a9d116a8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0002.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0003.json",
+      "size_bytes": 637346,
+      "sha256": "39a5da8f43586c7b8d239e0ba8ee88de068791a9be8d2ee011179bba8a170f2c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0003.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0004.json",
+      "size_bytes": 637220,
+      "sha256": "0adeefa2d054db82e29b5cfde2f3d5ea0fca49f7630a312e1a93783e20f38f83",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0004.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0005.json",
+      "size_bytes": 636832,
+      "sha256": "be8331bd51b5b957b0380896ab23438cbf5f3bf7da9b7158124c1e152955a9c3",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0005.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0006.json",
+      "size_bytes": 636052,
+      "sha256": "77a356c4ebcd9a1e6b463e18072952162772e2ff8995360f115e255c281edc06",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0006.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0007.json",
+      "size_bytes": 638216,
+      "sha256": "56546597f4d06c93b405e80bf32160922879dd3a73150fd401b4376dba6f8551",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0007.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0008.json",
+      "size_bytes": 638018,
+      "sha256": "4782742b7edbd77ed28fe381035d51d5c17c34526cbe8af81ddc608aed72ea5d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0008.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0009.json",
+      "size_bytes": 637506,
+      "sha256": "49e04dbe1ac6eeb3fac588cc7ad14d705c5ff8d8b483e093681afa21fc492cf3",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0009.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0010.json",
+      "size_bytes": 636630,
+      "sha256": "0162497373defaf34129a39b37c13d005476d0b7a8508dc3dd7a0e11a7d6e97d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0010.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0011.json",
+      "size_bytes": 636698,
+      "sha256": "cf9215c8984bbbd66273bc6190bcb785c09a37ec540901db6a86d25def155495",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0011.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0012.json",
+      "size_bytes": 639782,
+      "sha256": "b3a362d3eab8fe0d322e5ccd015b878f498c16bf89d5775ecc6df7d421c42192",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0012.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0013.json",
+      "size_bytes": 646216,
+      "sha256": "0f424ffbc2bac70007bdc1ae2b859812a8670e4939d171e69f71a6aa47dea27d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0013.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0014.json",
+      "size_bytes": 645556,
+      "sha256": "7fb0ccfcbe24fe937755163cf855bf9ce4147902927592bf8b649295b31f1d4c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0014.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0015.json",
+      "size_bytes": 645228,
+      "sha256": "32a6e3ed4a95a7dd2eb5bbbbaaee8df80cbb9fa137f90d19236d02795c21ff28",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0015.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0016.json",
+      "size_bytes": 645524,
+      "sha256": "6d88484f6cc8b85a90164ac2b96a34c29f30f05920601e41e5dc215d60154cb9",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0016.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0017.json",
+      "size_bytes": 644894,
+      "sha256": "913e1fa3160294b03dda34f31a43178340277d110d1936576a4b7d13b47bf597",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0017.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0018.json",
+      "size_bytes": 646498,
+      "sha256": "941bb3a07f68c8b30b572596ec7b6543e286f672181b1b0143437b747979e1ed",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0018.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0019.json",
+      "size_bytes": 644756,
+      "sha256": "92fb0898c3ce60692f0e5cfbedcead0a8e58e51d0548122fef8e59f93adc7f84",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0019.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0020.json",
+      "size_bytes": 645392,
+      "sha256": "d0b99ed2858a255a3ec25c0742cda79fee954e625da95da0de614f29d26bdceb",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0020.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0021.json",
+      "size_bytes": 645492,
+      "sha256": "f9e7be7e42c89af0c17c3d5170bbc6898f85c4802de1d00c69f670e1b6a52ac4",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0021.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0022.json",
+      "size_bytes": 642900,
+      "sha256": "2c207113c67df7ca98c05901fd7593072c1f8923375d98416487cc44a4322c6b",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0022.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0023.json",
+      "size_bytes": 645000,
+      "sha256": "c17e0687d9e602ee361c30ab8b0c486498283d2121e6839bd1d4a1490e589fe7",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0023.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0024.json",
+      "size_bytes": 643664,
+      "sha256": "bf3062f5415f49e71ceb4a49b7c26658cf87c92dea55c22e03960d1c1052e4b6",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0024.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0025.json",
+      "size_bytes": 644552,
+      "sha256": "56073e85c18cec01a212db6a65270b11f5ae70e2b1fe7bbc5cc2ffce8e719d06",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0025.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0026.json",
+      "size_bytes": 645756,
+      "sha256": "11c9d3ada156addfdded536f23ebe5219cc54cb86aed89af7644fa09f66e919a",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0026.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0027.json",
+      "size_bytes": 644568,
+      "sha256": "f4b1c1b7f7a366e148a00ab2146b71db02e2e29b4df7712b72dc471270487515",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0027.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0028.json",
+      "size_bytes": 645574,
+      "sha256": "40c91de4d78d8177bd9fbacd6f5f532c6f3846a7ac903808f4a1cf39dd2a3f12",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0028.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0029.json",
+      "size_bytes": 643336,
+      "sha256": "04a5f6e40050e55aba28c4b9e36d1e4e2dda4d6d02ecd2b0ccc5b87bc209b089",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0029.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0030.json",
+      "size_bytes": 646060,
+      "sha256": "da1af6c35a43dcc5618e7b60a1e65d1828f12bdc86f12e6d0b1126ce4bd208e2",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0030.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0031.json",
+      "size_bytes": 645652,
+      "sha256": "f089ef1f9621871647357cedaf267cebbcf07a1bf1c1642537bcc3fdcde441c5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0031.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0032.json",
+      "size_bytes": 646200,
+      "sha256": "ddffd80a10d17aa540523427b0ece64b7a1deada22cd6525d74aa68c285bdd7b",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0032.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0033.json",
+      "size_bytes": 645234,
+      "sha256": "a0eb347870e64228c7bc5e38038a898b706304a19fe35cd4f8ee8c8174dcbdcb",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0033.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0034.json",
+      "size_bytes": 646264,
+      "sha256": "17770dbe1f80e8a657879301206e460733cee4f38f2256cdd5aa3642fdd23389",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0034.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0035.json",
+      "size_bytes": 645992,
+      "sha256": "bf1ffedb7f5615449d153c7a7489912930245453aea9ee774fe66a29c4b844d8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0035.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0036.json",
+      "size_bytes": 644468,
+      "sha256": "22505ab5284def9de02d302a78febc19c39d3f3be7b22f92e646dfa37eca59fc",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0036.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0037.json",
+      "size_bytes": 645276,
+      "sha256": "15fc83ff99d4a3ce45eab6eaac65341de32cdffad1f27b2618c838e167c06649",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0037.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0038.json",
+      "size_bytes": 645912,
+      "sha256": "c3377f2be18a317f24c0c746d2fa076e807879a2907bae8a1b1f3ac389b89cf2",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0038.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0039.json",
+      "size_bytes": 646080,
+      "sha256": "0df4466b8201bb0cb3fe27a555965f42b7e40816d6c1725ba624d4a07ace6c12",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0039.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0040.json",
+      "size_bytes": 646424,
+      "sha256": "7b089d1a61f964f1143406ee97e6ed0103b36aaa8588ac34b3d93a01e3d3ef8e",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0040.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0041.json",
+      "size_bytes": 646404,
+      "sha256": "b89d91ff132019bccaa675b015bd31d06218c476842085c628b7c551cbbc79d6",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0041.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0042.json",
+      "size_bytes": 646176,
+      "sha256": "05a50c2875a5ba2a2c27dedc6b7e44d345710b679a387eb147e4c8a1049fbd12",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0042.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0043.json",
+      "size_bytes": 644662,
+      "sha256": "e9b250eb33bd11189787596a8feb234886b5e2b4acb1b4d5679e0590f4db59c8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0043.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0044.json",
+      "size_bytes": 644608,
+      "sha256": "e41b9c81a0c6d8ea9334e3a31727756502fc211678fbab0d24928009cf76b118",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0044.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0045.json",
+      "size_bytes": 643204,
+      "sha256": "bd7be5e71ecbb7687e94c64e79636459c841c75439e0aadc81f4b8e78cd655f6",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0045.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0046.json",
+      "size_bytes": 638418,
+      "sha256": "e9187168998950a79f3b07b769014a186bc6404e04cf0d3043c35a52e4314ef2",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0046.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0047.json",
+      "size_bytes": 628858,
+      "sha256": "203cc835e43ae6b23b1fe80badb0d1d8e345f39f5a7b628a1641e2f5e357d515",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0047.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0048.json",
+      "size_bytes": 629240,
+      "sha256": "7dd03acce33271a67db2c22480b737204582a89a79d89ae4cdda71061c092fc8",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0048.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0049.json",
+      "size_bytes": 630310,
+      "sha256": "c4791865f07bfd4820b27085c1fda1cda69bbc4a100b10deafda9f9e78bbfab7",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0049.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0050.json",
+      "size_bytes": 622044,
+      "sha256": "0b8632128e9d9458a37f7d42119f2074e4ac21a29fd1e7cc7af38e4b00b474f5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0050.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0051.json",
+      "size_bytes": 629710,
+      "sha256": "0399452563472ca44dabc10fbd889ccc25dc566c1c4b3def19dfef10955383d1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0051.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0052.json",
+      "size_bytes": 629738,
+      "sha256": "8104c26688247e2fe22aaaa5d1342fb9fa5e94a08bca3d563aa77a398fc27232",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0052.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0053.json",
+      "size_bytes": 629564,
+      "sha256": "73d8cd2d5764e07956020ded42496c5a50a39b419245c24372b90a1e9981d624",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0053.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0054.json",
+      "size_bytes": 627950,
+      "sha256": "4b39dc3e6327afe2b17833d9c40cce56eb061689d3ee2a01a7e2d2c1c16a86b1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0054.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0055.json",
+      "size_bytes": 629640,
+      "sha256": "a98631c423adc29e38502e2464c57308cb1e266378d5c6923efa59e1dfb473c1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0055.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0056.json",
+      "size_bytes": 630204,
+      "sha256": "8ad07b5b4382a8b7e6ef88e3ce684187a660caa6b902c6efcb3c391e1acc1d53",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0056.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0057.json",
+      "size_bytes": 628710,
+      "sha256": "193b67a7633fdbcef18d73af53d81b375b4576af75ff6d8bc2315ea0c6eff2d4",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0057.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0058.json",
+      "size_bytes": 629392,
+      "sha256": "7f00b7eb62fe867e7a48f0995adb7ee66294a9df025a74ab3172e6d4211245e3",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0058.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0059.json",
+      "size_bytes": 629872,
+      "sha256": "5b041d9556a76d9e2c6c7f69ce2597d560ac7d94cb1bd9f0bee639e4da5833fe",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0059.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0060.json",
+      "size_bytes": 627524,
+      "sha256": "e9b2c13418b599fcfa2b6f962f4501b798e38ffb2713e0531d732cfe76bc8b76",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0060.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0061.json",
+      "size_bytes": 628790,
+      "sha256": "5ceff16b2d9401fd5e61e0c353b3f34d1cc9e9de5cb71e87a316aa511c5cfbeb",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0061.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0062.json",
+      "size_bytes": 628804,
+      "sha256": "fa862d4ff5e0babbba23bcfb0e77731658807a89b14216505355e5459e22aebf",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0062.json"
+    },
+    {
+      "path": "retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0063.json",
+      "size_bytes": 344289,
+      "sha256": "55671c6cf37e1b823efbcbbb207e051bc988ede4354625be13d5f6e3e37f218d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/vietlegal_harrier_06b/chunk_meta/harrier_chunk_meta_0063.json"
+    },
+    {
+      "path": "retrieval_cache/bm25_runtime_v1/bm25_chunk_v1.sqlite",
+      "size_bytes": 267587584,
+      "sha256": "12220257ea778a5b6d78be1cd1a50a4dc41d82a0ee22e4836af0e4421c5ba913",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/bm25_runtime_v1/bm25_chunk_v1.sqlite"
+    },
+    {
+      "path": "retrieval_cache/bm25_runtime_v1/bm25_parent_v1.sqlite",
+      "size_bytes": 158003200,
+      "sha256": "a6cbf882272768dfb0400dc0ee1bb2afc16295427ac29dc81521e7ec97dbd783",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/bm25_runtime_v1/bm25_parent_v1.sqlite"
+    },
+    {
+      "path": "retrieval_cache/corpus_runtime_v1/corpus_chunks_v1.sqlite",
+      "size_bytes": 2116923392,
+      "sha256": "0aac56ef05822b0891d6148b490f944f8b5c667b78c3687415750ef1cfda906e",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/retrieval_cache/corpus_runtime_v1/corpus_chunks_v1.sqlite"
+    },
+    {
+      "path": "results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/README.md",
+      "size_bytes": 5180,
+      "sha256": "3360506696af0d0a1f7607cc649f6cf31b6a5a66212ade46e2cb1f0c9961f6a1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/README.md"
+    },
+    {
+      "path": "results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/adapter_config.json",
+      "size_bytes": 1215,
+      "sha256": "10f45cd99521004c08195877cac15c463e3d17aa9e9dd3c19001d4bb30c1f4b5",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/adapter_config.json"
+    },
+    {
+      "path": "results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/adapter_model.safetensors",
+      "size_bytes": 3159576,
+      "sha256": "f2f49e86d2297609a415602123dfcd004c76dd785aa43aba8c637582c3aa3276",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/adapter_model.safetensors"
+    },
+    {
+      "path": "results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/best_metadata.json",
+      "size_bytes": 518,
+      "sha256": "e38e1a9ec363a01c5f7db35befa1130535236dc28b967dad7fe220d9d4276bdb",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/v3_reranker_training/v3_3_training_final_v2_ampfix/best_adapter/best_metadata.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/README.md",
+      "size_bytes": 5184,
+      "sha256": "31e163f522d840ca105c797014f8d203410f5c6f61c94c6b987aa806df0a9956",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/README.md"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/adapter_config.json",
+      "size_bytes": 1234,
+      "sha256": "50b76108c615aaf3c3f85d995aad6cc9b8431a9b0d0d274056f87b77a0cbb5dd",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/adapter_config.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/adapter_model.safetensors",
+      "size_bytes": 67327104,
+      "sha256": "c1cabe07742d02eef70f6a2fce2532b73cd86a2fc1e353b3f43da4fa0ac51937",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/adapter_model.safetensors"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/chat_template.jinja",
+      "size_bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/chat_template.jinja"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/tokenizer.json",
+      "size_bytes": 19989325,
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/tokenizer.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/tokenizer_config.json",
+      "size_bytes": 1125,
+      "sha256": "9cf04fffe3d8c3b85e439fb35c7acad0761ab51c422a8c4256d9f887c3a0be7d",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_8_stage2_v2/g2_8b_stage2_v2_final_adapter/tokenizer_config.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/README.md",
+      "size_bytes": 5184,
+      "sha256": "31e163f522d840ca105c797014f8d203410f5c6f61c94c6b987aa806df0a9956",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/README.md"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/adapter_config.json",
+      "size_bytes": 1234,
+      "sha256": "c43fb0da070a789589ceea2aac6790d912fccd4297b36c79eb37064cee3b33e1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/adapter_config.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/adapter_model.safetensors",
+      "size_bytes": 67327072,
+      "sha256": "e9b734f1ae88fa137145b0f24d0eabf021a24ae48a911fe4bc3c7d539f1c3f1c",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/adapter_model.safetensors"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/chat_template.jinja",
+      "size_bytes": 7755,
+      "sha256": "273d8e0e683b885071fb17e08d71e5f2a5ddfb5309756181681de4f5a1822d80",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/chat_template.jinja"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/processor_config.json",
+      "size_bytes": 1191,
+      "sha256": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/processor_config.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/tokenizer.json",
+      "size_bytes": 19989325,
+      "sha256": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/tokenizer.json"
+    },
+    {
+      "path": "results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/tokenizer_config.json",
+      "size_bytes": 1166,
+      "sha256": "5f7aa0d810000c4a0940b35c8f16e56c3439260fccc13a321826ebc3ccf2501f",
+      "url": "https://huggingface.co/datasets/gphs09/VietLegal-RAG-artifacts/resolve/17876627834fa9982b5c57cad3fb54394591ee32/results/v3_cycle/generator_stage2/g2_4_stage1_adapter_runtime_compat/tokenizer_config.json"
+    }
+  ],
+  "hosting": {
+    "provider": "Hugging Face Hub",
+    "repo_type": "dataset",
+    "repo_id": "gphs09/VietLegal-RAG-artifacts",
+    "revision": "17876627834fa9982b5c57cad3fb54394591ee32",
+    "public": true,
+    "url_policy": "commit_pinned"
+  },
+  "public_remote_download_ready": true
+}

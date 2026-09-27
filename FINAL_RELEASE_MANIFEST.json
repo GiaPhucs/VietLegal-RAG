@@ -1,0 +1,142 @@
+{
+  "project": "VietLegal-RAG v2.1",
+  "release_status": "FINAL",
+  "benchmark_status": "FROZEN",
+  "evaluation_split": "V2 Dev600",
+  "checks": {
+    "required_files_present": true,
+    "no_secret_patterns": true,
+    "no_hardcoded_local_paths": true,
+    "no_forbidden_artifacts": true,
+    "no_large_public_files": true,
+    "readme_links_valid": true,
+    "python_compile": true,
+    "smoke_test": true,
+    "no_python_cache": true,
+    "internal_audit_not_public": true
+  },
+  "public_file_count": 21,
+  "public_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 608,
+      "sha256": "350e8291ad350c00a4547e2b17074968f02e3de9351f4667dd5c47df990e719e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5423,
+      "sha256": "1696e35b752a4bc88b635f0ba080515d4c08069150c8039c865167d10f4d09d4"
+    },
+    {
+      "path": "RELEASE_MANIFEST.json",
+      "bytes": 1638,
+      "sha256": "433d0a152bab0774358b6404f47763501858febaba81aae26a84dcce01137c31"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.md",
+      "bytes": 1923,
+      "sha256": "af20ddcbc868efde6ec88ca95155823d93a1c6a77c9ccca902813b6c72436b12"
+    },
+    {
+      "path": "demo/README.md",
+      "bytes": 704,
+      "sha256": "baf9f35a66c91b6672f0d704b0abf549ce266d053a36957b11550c920a326cff"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1218,
+      "sha256": "bf1132679313f6a3b509c7a98f1ad51626b96771d51a66c0c880fbda7bcfd907"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 3143,
+      "sha256": "b05051227891275e6696c750f6e85a64fef6716d57413055bb375de077b54ec5"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "bytes": 1135,
+      "sha256": "f3366809420905ae54527885e1879174ad0d53c385365688efb486de36671940"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 299,
+      "sha256": "30d96bb39673b9dbd955e85a5dc5a7273511115044cf36aea3aa7ecbc27bda20"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 222,
+      "sha256": "ecc2b63d6de6efa07ca04269c9c0ddbd723315e31608b80a9c41314bd7dfaade"
+    },
+    {
+      "path": "results/final_portfolio_benchmark.csv",
+      "bytes": 1809,
+      "sha256": "74053085fd355f0a5de2ce5c29d1e61da38648f35ab5287e8f5c79e25ffb5490"
+    },
+    {
+      "path": "results/final_portfolio_benchmark.json",
+      "bytes": 6540,
+      "sha256": "7684bd36215e37552ec1294a08c216221c6cc18eb8eba82159256b443050d023"
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "bytes": 1556,
+      "sha256": "ec554f6a366d66e546fd2a035dc8484097d6bb53b561ac08b55d16ce3ab7a761"
+    },
+    {
+      "path": "src/vietlegal_rag/__init__.py",
+      "bytes": 297,
+      "sha256": "ebeaa58dda95de6614f59fb01c0ab49284927f2d9ee19b980371650700952cf6"
+    },
+    {
+      "path": "src/vietlegal_rag/backends.py",
+      "bytes": 1177,
+      "sha256": "184f4b38ff37fce94324df859a586188711a66ffb82161fc83f59f45175d8ad0"
+    },
+    {
+      "path": "src/vietlegal_rag/evaluation/__init__.py",
+      "bytes": 96,
+      "sha256": "83082b1dd295417dc41abb38905bf07b113b937982da843ec327e72d383c2d6f"
+    },
+    {
+      "path": "src/vietlegal_rag/evaluation/citation.py",
+      "bytes": 3312,
+      "sha256": "26c5d7eeb2aee8de5807785db52c893b8df7c8b6662a72069f1556ae74559040"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/__init__.py",
+      "bytes": 174,
+      "sha256": "c390df284975a244906b412b2991230a70826d98694ef09dbe3407bc75f517b9"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/aggregator.py",
+      "bytes": 6530,
+      "sha256": "7c04a4ed4f47e2f11afdccb0be8acd1356a30efbcccb830be3b9605ec9d646bf"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/citation_linker.py",
+      "bytes": 14065,
+      "sha256": "a4e3a004db92fc8b7c5c7478dc40fa4973d603e796465b6ea791ecd97a75c9bc"
+    },
+    {
+      "path": "src/vietlegal_rag/pipeline.py",
+      "bytes": 4404,
+      "sha256": "cb31f17116330387dbcca586f54161466b02c131b98165590a308baac053c5af"
+    }
+  ],
+  "excluded_from_public_release": [
+    "legal corpus",
+    "competition datasets",
+    "Silver Oracle source artifacts",
+    "private/public submissions",
+    "retrieval caches",
+    "model checkpoints",
+    "LoRA adapters",
+    "internal source-discovery audit",
+    "Colab absolute-path research artifacts"
+  ],
+  "provenance": {
+    "historical_canonical_source": "NOT_FOUND",
+    "public_source": "clean reference implementation reconstructed from verified V2.1 components",
+    "model_backends": "dependency-injected contracts"
+  }
+}

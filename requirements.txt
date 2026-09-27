@@ -1,0 +1,9 @@
+# Core public reference implementation uses Python standard library only.
+#
+# Production model backends require their own dependencies, e.g.
+# torch
+# transformers
+# peft
+# bitsandbytes
+# sentence-transformers
+# rank-bm25

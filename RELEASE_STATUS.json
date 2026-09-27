@@ -1,0 +1,55 @@
+{
+  "project": "VietLegal-RAG",
+  "release_stage": "FINAL_SOURCE_AUDIT",
+  "core_pipeline": "PASS",
+  "portable_local_runtime": "PASS",
+  "clean_clone_source_test": "PASS",
+  "artifact_manifest": {
+    "file_count": 151,
+    "size_bytes": 4930429361,
+    "all_sha256_present": true,
+    "remote_urls_configured": true
+  },
+  "verified_smoke": {
+    "final_gate": "PASS",
+    "citation_mismatch": 0,
+    "unsupported_citations": 0,
+    "unsupported_claims": 0,
+    "pipeline_seconds_local_ssd": 68.37505912780762,
+    "wall_seconds_with_startup": 154.0379285812378
+  },
+  "remaining_public_release_blocker": null,
+  "final_source_audit": "PASS",
+  "artifact_hosting": {
+    "status": "PUBLIC_CERTIFIED",
+    "provider": "Hugging Face Hub",
+    "repo_id": "gphs09/VietLegal-RAG-artifacts",
+    "repo_type": "dataset",
+    "revision": "17876627834fa9982b5c57cad3fb54394591ee32",
+    "files": 151,
+    "size_bytes": 4930429361
+  },
+  "artifact_downloader": {
+    "version": "1.1",
+    "resume_supported": true,
+    "retry_supported": true,
+    "atomic_partial_download": true
+  },
+  "remote_download_clean_clone_test": {
+    "status": "PASS",
+    "repo_id": "gphs09/VietLegal-RAG-artifacts",
+    "revision": "17876627834fa9982b5c57cad3fb54394591ee32",
+    "artifact_files": 151,
+    "artifact_size_bytes": 4930429361,
+    "source_root_used": false,
+    "download_source": "PUBLIC_MANIFEST_URLS_ONLY",
+    "resume_from_interrupted_run": true,
+    "download_seconds_recovery_run": 302.5645501613617,
+    "sha256_reverification": "151/151 PASS",
+    "pipeline_status": "PASS",
+    "final_gate": "PASS",
+    "pipeline_seconds": 68.76978921890259,
+    "wall_seconds_including_model_startup": 162.59432816505432
+  },
+  "release_ready": true
+}

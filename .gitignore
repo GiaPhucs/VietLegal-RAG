@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# IDE / notebook
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+
+# Runtime artifacts
+artifacts/
+retrieval_cache/
+results/
+runs/
+oracle/
+data/
+
+# Large model/index/data files
+*.npy
+*.npz
+*.sqlite
+*.sqlite3
+*.db
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.faiss
+
+# Generated archives / logs
+*.zip
+*.tar
+*.tar.gz
+*.log
+
+# Local environment
+.env
+.env.*

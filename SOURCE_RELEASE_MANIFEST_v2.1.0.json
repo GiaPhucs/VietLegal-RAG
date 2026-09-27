@@ -1,0 +1,268 @@
+{
+  "project": "VietLegal-RAG",
+  "version": "2.1.0",
+  "source_file_count": 52,
+  "source_total_bytes": 333169,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 422,
+      "sha256": "acfabee9b8a33e8393ca997a6eb8c112da43879372f3f9bbff60fc90ee8dd9cf"
+    },
+    {
+      "path": "FINAL_RELEASE_MANIFEST.json",
+      "size_bytes": 4445,
+      "sha256": "36f0a6768f98d5534abd91fb5cc4d00068ba024086756badebef8a3ac3ea0956"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5629,
+      "sha256": "6ac939a3f24c9ae81398acb0d4fac677a506c01c544cbfa8b49eff383639d32d"
+    },
+    {
+      "path": "RELEASE_MANIFEST.json",
+      "size_bytes": 1638,
+      "sha256": "433d0a152bab0774358b6404f47763501858febaba81aae26a84dcce01137c31"
+    },
+    {
+      "path": "RELEASE_NOTES_v2.1.0.md",
+      "size_bytes": 2031,
+      "sha256": "60d21506740f05900fc0462d86e902218d118066dd61aed6b465d7d0e257a25e"
+    },
+    {
+      "path": "RELEASE_STATUS.json",
+      "size_bytes": 1732,
+      "sha256": "0170e9afe0d9a76dcd1463d518f1e8d93e66661424c9187911f5c6c947bb1907"
+    },
+    {
+      "path": "RUNTIME.md",
+      "size_bytes": 1087,
+      "sha256": "56690fd6e737a10a4c0d54188cdc48177c1605fa935be96b07bc060b3c65633a"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.md",
+      "size_bytes": 1923,
+      "sha256": "af20ddcbc868efde6ec88ca95155823d93a1c6a77c9ccca902813b6c72436b12"
+    },
+    {
+      "path": "artifact_manifest.json",
+      "size_bytes": 66250,
+      "sha256": "59f241ee5eafc0636df5e0eba9718db82c78adca3d408104e60b3e0d19133fb5"
+    },
+    {
+      "path": "demo/README.md",
+      "size_bytes": 704,
+      "sha256": "baf9f35a66c91b6672f0d704b0abf549ce266d053a36957b11550c920a326cff"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "size_bytes": 1218,
+      "sha256": "bf1132679313f6a3b509c7a98f1ad51626b96771d51a66c0c880fbda7bcfd907"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "size_bytes": 3143,
+      "sha256": "b05051227891275e6696c750f6e85a64fef6716d57413055bb375de077b54ec5"
+    },
+    {
+      "path": "docs/METHODOLOGY.md",
+      "size_bytes": 1135,
+      "sha256": "f3366809420905ae54527885e1879174ad0d53c385365688efb486de36671940"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 299,
+      "sha256": "30d96bb39673b9dbd955e85a5dc5a7273511115044cf36aea3aa7ecbc27bda20"
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "size_bytes": 187,
+      "sha256": "41efa89d77484083395efe81a352fa4b4630faf97237d82f7347a7e1bc87a53e"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 222,
+      "sha256": "ecc2b63d6de6efa07ca04269c9c0ddbd723315e31608b80a9c41314bd7dfaade"
+    },
+    {
+      "path": "scripts/download_artifacts.py",
+      "size_bytes": 14993,
+      "sha256": "3d3bcb0fbb467ca1b163c5672e3c7d2a058c3c0a7f8488e1f3d8c72b3e93ea8f"
+    },
+    {
+      "path": "scripts/query_bm25.py",
+      "size_bytes": 1137,
+      "sha256": "56f9e0e74e37795ee2f3e3a246da5bca3798de2266cdb6502def391f1cc64e71"
+    },
+    {
+      "path": "scripts/query_dense_parent.py",
+      "size_bytes": 1761,
+      "sha256": "149df66946e4e2f68ce459c8c82e2a364f4829ae0c34b0659ecdcac2b1acbae1"
+    },
+    {
+      "path": "scripts/query_harrier_chunk.py",
+      "size_bytes": 1589,
+      "sha256": "419694452e601ad547c10b2fdeb4372b93afcde81b05dfa96a9474564b0ca2fc"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "size_bytes": 10475,
+      "sha256": "97119688fd192dc7aeb3751a6140d9505e2412203427bdf5315985c52fc020b1"
+    },
+    {
+      "path": "scripts/smoke_test.py",
+      "size_bytes": 1556,
+      "sha256": "ec554f6a366d66e546fd2a035dc8484097d6bb53b561ac08b55d16ce3ab7a761"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "size_bytes": 3628,
+      "sha256": "ea14a0f416043a235cbcee3df8ca37be468405c27db43acd3f7ef88032dc704a"
+    },
+    {
+      "path": "src/vietlegal_rag/__init__.py",
+      "size_bytes": 344,
+      "sha256": "c8c06694c3d1532538fc9348757898593b0b3c4ef7b728628d66f988498d89b6"
+    },
+    {
+      "path": "src/vietlegal_rag/backends.py",
+      "size_bytes": 1177,
+      "sha256": "184f4b38ff37fce94324df859a586188711a66ffb82161fc83f59f45175d8ad0"
+    },
+    {
+      "path": "src/vietlegal_rag/evaluation/__init__.py",
+      "size_bytes": 96,
+      "sha256": "83082b1dd295417dc41abb38905bf07b113b937982da843ec327e72d383c2d6f"
+    },
+    {
+      "path": "src/vietlegal_rag/evaluation/citation.py",
+      "size_bytes": 3312,
+      "sha256": "26c5d7eeb2aee8de5807785db52c893b8df7c8b6662a72069f1556ae74559040"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/__init__.py",
+      "size_bytes": 232,
+      "sha256": "02808f08c261c8d344cfa0c122c7f1571ceac7675213803323b3bd33385bb5f4"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/aggregator.py",
+      "size_bytes": 6530,
+      "sha256": "7c04a4ed4f47e2f11afdccb0be8acd1356a30efbcccb830be3b9605ec9d646bf"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/aggregator_v1.py",
+      "size_bytes": 13151,
+      "sha256": "4ae9c185f7523c8da2190ec50309ca16b1a856d01e19b9682b9a9b1837e4db01"
+    },
+    {
+      "path": "src/vietlegal_rag/evidence/citation_linker.py",
+      "size_bytes": 14065,
+      "sha256": "a4e3a004db92fc8b7c5c7478dc40fa4973d603e796465b6ea791ecd97a75c9bc"
+    },
+    {
+      "path": "src/vietlegal_rag/generation/__init__.py",
+      "size_bytes": 88,
+      "sha256": "1e636dcdd5007b12f8d1ac9f32a68631a12d03533276722a8cc855049909dfb5"
+    },
+    {
+      "path": "src/vietlegal_rag/generation/generator.py",
+      "size_bytes": 11858,
+      "sha256": "9b63c0c7f4d30bf3cc194e3876425435c8fea0cf474528ca5c518e04b1bb5ce4"
+    },
+    {
+      "path": "src/vietlegal_rag/pipeline.py",
+      "size_bytes": 4404,
+      "sha256": "cb31f17116330387dbcca586f54161466b02c131b98165590a308baac053c5af"
+    },
+    {
+      "path": "src/vietlegal_rag/pipeline_runtime.py",
+      "size_bytes": 18981,
+      "sha256": "c3421e89c37231455796b89781705ecc6dcd6e9feaed948d465cba7b2178d135"
+    },
+    {
+      "path": "src/vietlegal_rag/rendering/__init__.py",
+      "size_bytes": 143,
+      "sha256": "f6fa7b8581c158b608e5b8e185bbda3f34c86cf9cbc82389dfb394cec4576553"
+    },
+    {
+      "path": "src/vietlegal_rag/rendering/final_answer.py",
+      "size_bytes": 13552,
+      "sha256": "daa46d35fe38b141d44a1c2d4917de2edd8a6955ef9c89eb33cf8aa14bd99f8d"
+    },
+    {
+      "path": "src/vietlegal_rag/reranking/__init__.py",
+      "size_bytes": 69,
+      "sha256": "10d30f7d7b5022391708989ee848ce9fbf0fe5c105d2bf273bf1ce61161cb968"
+    },
+    {
+      "path": "src/vietlegal_rag/reranking/v3.py",
+      "size_bytes": 8251,
+      "sha256": "8ec2da85b5f596cfab609048d4b9050e14e3d81731f42155c5d0e977668470fb"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/__init__.py",
+      "size_bytes": 1021,
+      "sha256": "40651af8041b66bdf76d43ed020ddd73359c40f96071de4ce94639c347af11b4"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/bm25.py",
+      "size_bytes": 6784,
+      "sha256": "8f5c0d0bfa4c469907b55aca9c33afae848358bae0586aa864c254d3b8df75f3"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/candidate_pool.py",
+      "size_bytes": 17264,
+      "sha256": "4f9bcd600ff72d17c8566a51b2efee11dd4596deeb05cf6380a1ba60054a5974"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/corpus_store.py",
+      "size_bytes": 5837,
+      "sha256": "e0e24ca4911959e58a89970bb4b27139fe647a082f5d8322158cbd6842fafcd0"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/dense_parent.py",
+      "size_bytes": 9322,
+      "sha256": "ab5f1f2f6826ef639c86a98bd5c266e04571617b45d0700a0c1b610150394460"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/harrier_chunk.py",
+      "size_bytes": 11140,
+      "sha256": "339d7f039965dbbd59ac37541addb3f754c2a8ec4de6432c3db3a507bc26bcab"
+    },
+    {
+      "path": "src/vietlegal_rag/retrieval/hybrid.py",
+      "size_bytes": 14074,
+      "sha256": "8087a4a32910cffd93a56d75ebdf5859f61a22c6c1ee26285527e5054ec84431"
+    },
+    {
+      "path": "src/vietlegal_rag/validation/__init__.py",
+      "size_bytes": 117,
+      "sha256": "94526b90deb435ae79177d76cd26c5d74c4b708bb8fc1890b044ae6e4b0b6d7b"
+    },
+    {
+      "path": "src/vietlegal_rag/validation/citation_grounding.py",
+      "size_bytes": 42784,
+      "sha256": "571dc3076cf7c7ef1999daf78fa332278555c2b364d1cf83c5995d21765e40db"
+    },
+    {
+      "path": "src/vietlegal_rag.egg-info/PKG-INFO",
+      "size_bytes": 160,
+      "sha256": "bf0272e834e718c0be26df6a6349303452d87e218e6deb150a498820045ebe16"
+    },
+    {
+      "path": "src/vietlegal_rag.egg-info/SOURCES.txt",
+      "size_bytes": 1194,
+      "sha256": "8f4c98ecab1a4659f7196e117916adf31866e621e6041cb674fa1e34bce801af"
+    },
+    {
+      "path": "src/vietlegal_rag.egg-info/dependency_links.txt",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/vietlegal_rag.egg-info/top_level.txt",
+      "size_bytes": 14,
+      "sha256": "4b3b9bc75818c8b466fd12eed388a1b2df80a0f165d9b1234a611cc0a3907ccb"
+    }
+  ]
+}
