@@ -1,0 +1,27 @@
+category,metric,value,display
+Retrieval,Hybrid Parent AnyHit@5,0.91,91.00%
+Retrieval,Hybrid Parent MRR@20,0.7468643483709273,0.7469
+Reranking,V3 Exact AnyHit@5,0.8,80.00%
+Reranking,V3 Exact MRR@20,0.6282191576698155,0.6282
+Reranking,V3 Parent AnyHit@5,0.97,97.00%
+Reranking,V3 Parent MRR@20,0.8404112554112554,0.8404
+Candidate Pool,Any Exact Gold,0.98,98.00%
+Candidate Pool,Any Parent Gold,0.995,99.50%
+Evidence,Silver Exact Precision,0.2357630979498861,23.58%
+Evidence,Silver Exact Recall,0.234,23.40%
+Evidence,Silver Parent Precision,0.5159453302961275,51.59%
+Evidence,Silver Parent Recall,0.4177583697234352,41.78%
+Citation,Trusted Exact Citation Precision,0.3961038961038961,39.61%
+Citation,Trusted Exact Citation Recall,0.071,7.10%
+Citation,Trusted Parent Citation Precision,0.7272727272727273,72.73%
+Citation,Trusted Parent Citation Recall,0.12809315866084425,12.81%
+Citation,Trusted Citation Coverage,0.41027994492886644,41.03%
+Grounding Proxy,Supported Claim Rate,0.88022028453419,88.02%
+Grounding Proxy,Partial Claim Rate,0.08490133088572739,8.49%
+Grounding Proxy,Unsupported Claim Rate,0.034878384580082605,3.49%
+Shipping,Final Gate PASS,0.425,42.50%
+Repair,Citation Mismatch Reduction,0.9354838709677419,93.55%
+Runtime T4,Retrieval + V3 p50,14.145681537499911,14.15s
+Runtime T4,Retrieval + V3 p95,16.212929516799747,16.21s
+Runtime T4,Generation p50,59.53575932979584,59.54s
+Runtime T4,Generation p95,61.813445651531225,61.81s

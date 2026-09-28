@@ -1,5 +1,53 @@
 # VietLegal-RAG v2.1 — Evaluation
 
+<!-- V21_FINALHOLDOUT200_START -->
+
+## Primary v2.1.0 benchmark — finalholdout200
+
+The primary v2.1.0 benchmark is now `finalholdout200`.
+
+Benchmark identity:
+
+- Queries: **200**
+- Train5600 overlap: **0**
+- Historical Dev600 overlap: **0**
+- Silver Oracle coverage: **200/200**
+- Oracle used during inference: **No**
+- Runtime errors: **0**
+- Benchmark SHA256:
+  `66167e8b5845be10115fe46dbbb8178e0e461ad1c6c8a4e9fba5b221f2c069be`
+- STEP 9B protocol: `afe7b10870b5855d`
+- STEP 9C protocol: `8edf37148b32a119`
+
+### Headline metrics
+
+| Category | Metric | Result |
+|---|---|---:|
+| Retrieval | Hybrid Parent AnyHit@5 | **91.00%** |
+| Retrieval | Hybrid Parent MRR@20 | **0.7469** |
+| Reranking | V3 Exact AnyHit@5 | **80.00%** |
+| Reranking | V3 Parent AnyHit@5 | **97.00%** |
+| Reranking | V3 Parent MRR@20 | **0.8404** |
+| Candidate Pool | Any Exact Gold | **98.00%** |
+| Candidate Pool | Any Parent Gold | **99.50%** |
+| Evidence | Silver Parent Precision | **51.59%** |
+| Evidence | Silver Parent Recall | **41.78%** |
+| Trusted Citation | Parent Precision | **72.73%** |
+| Trusted Citation | Parent Recall | **12.81%** |
+| Trusted Citation | Coverage | **41.03%** |
+| Grounding Proxy | Supported Claim Rate | **88.02%** |
+| Grounding Proxy | Unsupported Claim Rate | **3.49%** |
+| Shipping Gate | PASS | **42.50%** |
+
+Full report:
+
+`docs/benchmarks/v2.1.0/BENCHMARK_v2.1.0_finalholdout200.md`
+
+Historical Dev600 and competition-era metrics below are retained only as
+historical context and are **not** the primary v2.1.0 benchmark.
+
+<!-- V21_FINALHOLDOUT200_END -->
+
 ## Portfolio benchmark
 
 | Category | Metric | Result |

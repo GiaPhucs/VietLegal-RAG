@@ -135,6 +135,49 @@ An answer is returned as final only when:
 
 When an explicit citation mismatch has exactly one trusted evidence candidate, the runtime may repair it deterministically and then re-run validation from scratch. Ambiguous or unsupported citations are not guessed.
 
+<!-- V21_OFFICIAL_BENCHMARK_START -->
+
+## Official v2.1.0 benchmark
+
+The current primary evaluation is a frozen **200-query final holdout**
+(`finalholdout200`) with zero query-ID overlap with both the reranker
+training set and the historical Dev600 set.
+
+| Metric | Result |
+|---|---:|
+| Hybrid Parent AnyHit@5 | **91.00%** |
+| V3 Exact AnyHit@5 | **80.00%** |
+| V3 Parent AnyHit@5 | **97.00%** |
+| V3 Parent MRR@20 | **0.8404** |
+| Candidate Pool Any Exact Gold | **98.00%** |
+| Candidate Pool Any Parent Gold | **99.50%** |
+| Trusted Parent Citation Precision | **72.73%** |
+| Supported Claim Rate | **88.02%** |
+| Unsupported Claim Rate | **3.49%** |
+| Final Shipping Gate PASS | **42.50%** |
+
+The deterministic citation repair layer reduced explicit citation
+mismatches from **93 to 6 (93.55% reduction)**.
+
+On a Tesla T4:
+
+- Retrieval + V3 latency: **14.15 s p50 / 16.21 s p95**
+- Generation latency: **59.54 s p50 / 61.81 s p95**
+- Generation throughput: **8.36 tokens/s**
+
+Full methodology and results:
+
+[`docs/benchmarks/v2.1.0/BENCHMARK_v2.1.0_finalholdout200.md`](docs/benchmarks/v2.1.0/BENCHMARK_v2.1.0_finalholdout200.md)
+
+> Evidence and citation evaluation uses answer-aware **Silver Oracle**
+> labels rather than official human-annotated citation gold.
+> Grounding values are deterministic legal-aware validator proxy metrics
+> and must not be interpreted as definitive hallucination rates.
+> Shipping-gate PASS measures conservative release-gate compliance,
+> not answer accuracy.
+
+<!-- V21_OFFICIAL_BENCHMARK_END -->
+
 ## Evaluation
 
 The independent evaluation framework is designed around retrieval, evidence, citation, grounding, and system metrics, including:

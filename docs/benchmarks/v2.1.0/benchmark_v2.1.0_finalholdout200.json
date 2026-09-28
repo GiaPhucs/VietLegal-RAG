@@ -1,0 +1,192 @@
+{
+  "project": "VietLegal-RAG",
+  "release": "2.1.0",
+  "benchmark": {
+    "name": "finalholdout200",
+    "queries": 200,
+    "sha256": "66167e8b5845be10115fe46dbbb8178e0e461ad1c6c8a4e9fba5b221f2c069be",
+    "train_overlap": 0,
+    "dev600_overlap": 0,
+    "oracle_coverage": "200/200",
+    "label_type": "answer-aware Silver Oracle",
+    "oracle_used_during_inference": false
+  },
+  "protocols": {
+    "step9b_retrieval_reranking": "afe7b10870b5855d",
+    "step9c_generation_grounding": "8edf37148b32a119"
+  },
+  "retrieval": {
+    "hybrid_parent": {
+      "recall@5": 0.5099166666666667,
+      "recall@10": 0.6404166666666667,
+      "recall@20": 0.7414166666666666,
+      "recall@50": 0.8470833333333333,
+      "any_hit@5": 0.91,
+      "any_hit@10": 0.965,
+      "any_hit@20": 0.985,
+      "any_hit@50": 0.995,
+      "mrr@20": 0.7468643483709273,
+      "mrr@50": 0.7471738721804512,
+      "ndcg@5": 0.5147804822680307,
+      "ndcg@10": 0.5783245121963031,
+      "ndcg@20": 0.6174046413996456,
+      "ndcg@50": 0.6500669295689402
+    },
+    "harrier_exact_chunk": {
+      "recall@5": 0.193,
+      "recall@10": 0.28300000000000003,
+      "recall@20": 0.376,
+      "recall@50": 0.47700000000000004,
+      "any_hit@5": 0.63,
+      "any_hit@10": 0.79,
+      "any_hit@20": 0.905,
+      "any_hit@50": 0.94,
+      "mrr@20": 0.5099899724458549,
+      "mrr@50": 0.5110332921579052,
+      "ndcg@5": 0.23334954849953088,
+      "ndcg@10": 0.28180145789208383,
+      "ndcg@20": 0.3217512718084949,
+      "ndcg@50": 0.35601807323977996
+    },
+    "bm25_exact_chunk": {
+      "recall@5": 0.172,
+      "recall@10": 0.243,
+      "recall@20": 0.332,
+      "recall@50": 0.45399999999999996,
+      "any_hit@5": 0.55,
+      "any_hit@10": 0.645,
+      "any_hit@20": 0.78,
+      "any_hit@50": 0.875,
+      "mrr@20": 0.41573867002021025,
+      "mrr@50": 0.41881518915013255,
+      "ndcg@5": 0.19619353172453935,
+      "ndcg@10": 0.2354193439620379,
+      "ndcg@20": 0.27342056485445587,
+      "ndcg@50": 0.3145916805483387
+    },
+    "v3_exact_chunk": {
+      "recall@5": 0.234,
+      "recall@10": 0.298,
+      "recall@20": 0.387,
+      "recall@50": 0.499,
+      "any_hit@5": 0.8,
+      "any_hit@10": 0.87,
+      "any_hit@20": 0.935,
+      "any_hit@50": 0.95,
+      "mrr@20": 0.6282191576698155,
+      "mrr@50": 0.6287010379219165,
+      "ndcg@5": 0.2881287031034564,
+      "ndcg@10": 0.32314766399020334,
+      "ndcg@20": 0.36129820788348527,
+      "ndcg@50": 0.3991436199770999
+    },
+    "v3_parent": {
+      "recall@5": 0.5323333333333333,
+      "recall@10": 0.62075,
+      "recall@20": 0.7297499999999999,
+      "recall@50": 0.84725,
+      "any_hit@5": 0.97,
+      "any_hit@10": 0.975,
+      "any_hit@20": 0.99,
+      "any_hit@50": 0.995,
+      "mrr@20": 0.8404112554112554,
+      "mrr@50": 0.8406385281385282,
+      "ndcg@5": 0.5605846538215767,
+      "ndcg@10": 0.6032196671422987,
+      "ndcg@20": 0.6456090386843367,
+      "ndcg@50": 0.6816764236460291
+    },
+    "candidate_pool": {
+      "exact_gold_coverage": 0.82,
+      "parent_gold_coverage": 0.9275833333333334,
+      "any_exact_gold": 0.98,
+      "any_parent_gold": 0.995
+    }
+  },
+  "evidence": {
+    "silver_exact_precision": 0.2357630979498861,
+    "silver_exact_recall": 0.234,
+    "silver_parent_precision": 0.5159453302961275,
+    "silver_parent_recall": 0.4177583697234352
+  },
+  "trusted_final_citations": {
+    "silver_exact_precision": 0.3961038961038961,
+    "silver_exact_recall": 0.071,
+    "silver_parent_precision": 0.7272727272727273,
+    "silver_parent_recall": 0.12809315866084425
+  },
+  "grounding_micro": {
+    "substantive_claims": 2179,
+    "supported_claim_rate": 0.88022028453419,
+    "partial_claim_rate": 0.08490133088572739,
+    "unsupported_claim_rate": 0.034878384580082605,
+    "trusted_citation_coverage": 0.41027994492886644
+  },
+  "grounding_macro": {
+    "supported_claim_rate": 0.8795907647715233,
+    "unsupported_claim_rate": 0.03773479275544371,
+    "evidence_coverage": 0.406
+  },
+  "shipping": {
+    "pass_queries": 85,
+    "pass_rate": 0.425,
+    "repair_attempt_queries": 143,
+    "repair_success_queries": 83,
+    "repair_actions": 93,
+    "initial_citation_mismatches": 93,
+    "final_citation_mismatches": 6,
+    "initial_unsupported_citations": 66,
+    "final_unsupported_citations": 66
+  },
+  "runtime_retrieval_reranking": {
+    "timings": {
+      "hybrid_retrieval": {
+        "mean_seconds": 3.5742705951400158,
+        "p50_seconds": 3.455657451500201,
+        "p95_seconds": 5.0681817184501305,
+        "max_seconds": 14.746362293000061
+      },
+      "candidate_pool": {
+        "mean_seconds": 0.3036854644449994,
+        "p50_seconds": 0.29130653649986016,
+        "p95_seconds": 0.5173307713000779,
+        "max_seconds": 0.8506916869998804
+      },
+      "v3_rerank": {
+        "mean_seconds": 10.299735777320004,
+        "p50_seconds": 10.350926514000093,
+        "p95_seconds": 11.486517223050033,
+        "max_seconds": 12.070769282999663
+      },
+      "retrieval_plus_rerank": {
+        "mean_seconds": 14.17769183690502,
+        "p50_seconds": 14.145681537499911,
+        "p95_seconds": 16.212929516799747,
+        "max_seconds": 24.13274440300006
+      }
+    },
+    "throughput_qps": 0.07053334290966641,
+    "peak_cuda_allocated_gb": 6.697239875793457,
+    "peak_cuda_reserved_gb": 7.228515625,
+    "peak_process_rss_gb": 2.8040733337402344
+  },
+  "runtime_generation": {
+    "generator_p50_seconds": 59.53575932979584,
+    "generator_p95_seconds": 61.813445651531225,
+    "downstream_p50_seconds": 59.59270716950027,
+    "downstream_p95_seconds": 61.95195723145021,
+    "output_tokens_total": 82623,
+    "output_tokens_per_second": 8.364032978756716,
+    "max_generation_peak_vram_gb": 2.1385927200317383
+  },
+  "derived": {
+    "v3_exact_anyhit5_gain_over_harrier_pp": 17.000000000000004,
+    "v3_parent_anyhit5_gain_over_hybrid_pp": 5.999999999999995,
+    "citation_mismatch_reduction_rate": 0.9354838709677419
+  },
+  "limitations": {
+    "silver_oracle": "Evidence and citation metrics use answer-aware Silver Oracle labels, not official human-annotated gold citation labels.",
+    "grounding": "Grounding metrics are deterministic legal-aware validator proxy metrics and must not be interpreted as a definitive hallucination rate.",
+    "shipping_gate": "Shipping PASS measures conservative release-gate compliance and is not equivalent to answer accuracy."
+  }
+}
