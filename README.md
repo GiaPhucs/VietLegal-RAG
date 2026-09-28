@@ -4,6 +4,39 @@
 
 VietLegal-RAG is an independent retrieval-augmented generation system for Vietnamese legal question answering. The runtime retrieves legal passages from a structured corpus, reranks chunk-level evidence, generates an answer, then independently validates legal citations and factual grounding before the answer is allowed through the final shipping gate.
 
+<!-- PROJECT_CONTEXT_START -->
+
+## Project Context
+
+VietLegal-RAG originated from **Task 2 — LegalQA of the UIT Data Science Challenge 2026**.
+
+The competition workflow was developed primarily in **Google Colab and Google Drive** during the competition period. After the competition, the verified system was further consolidated, extended, independently benchmarked, and packaged as the reproducible `VietLegal-RAG v2.1.0` portfolio release presented in this repository.
+
+The original competition submission was developed individually.
+
+**Development history note:** the project was developed in Google Colab/Drive during the competition; this GitHub repository was created later as the packaged, documented, and reproducible public release. The short Git history therefore reflects the release-packaging phase, not the full experimental timeline.
+
+The current `finalholdout200` benchmark is a post-competition independent evaluation and should not be confused with competition leaderboard metrics.
+
+<!-- PROJECT_CONTEXT_END -->
+
+<!-- PERSONAL_CONTRIBUTIONS_START -->
+
+## My Contributions
+
+The original competition work and the subsequent public portfolio release were developed individually. My main engineering contributions include:
+
+- Designed and integrated the hybrid retrieval pipeline combining Dense Parent, VietLegal-Harrier Chunk, BM25 Parent, and BM25 Chunk retrieval.
+- Implemented and evaluated weighted Reciprocal Rank Fusion, parent-local expansion, and candidate-pool construction.
+- Developed and evaluated the V3 chunk-level neural reranking pipeline.
+- Integrated the Qwen3.5-2B + Stage2-v2 LoRA grounded-generation runtime.
+- Designed the structured legal Evidence Aggregator and the citation/grounding validation pipeline, including deterministic citation repair.
+- Built leakage-checked evaluation protocols for retrieval, evidence, citation, grounding, and runtime performance.
+- Profiled and optimized runtime I/O, including moving indexes and databases from mounted Google Drive to local SSD.
+- Packaged the public v2.1.0 release with resumable artifact downloads, SHA256 verification, frozen artifact revisions, GitHub release documentation, and Hugging Face artifact hosting.
+
+<!-- PERSONAL_CONTRIBUTIONS_END -->
+
 ## Architecture
 
 ```text
@@ -191,9 +224,21 @@ The independent evaluation framework is designed around retrieval, evidence, cit
 
 A dedicated independent benchmark is separate from the runtime smoke tests described above.
 
+<!-- DEVELOPMENT_HISTORY_START -->
+
+## Development History
+
+A milestone-based engineering history is available in [`docs/DEVELOPMENT_LOG.md`](docs/DEVELOPMENT_LOG.md).
+
+It summarizes the progression from the competition-era LegalQA workflow through hybrid retrieval, V3 reranking, structured evidence aggregation, grounded generation, citation validation, deterministic repair, independent benchmarking, runtime profiling, and the reproducible public release.
+
+The development log is an engineering milestone record derived from retained experiment artifacts and verified benchmark outputs. It is not presented as a substitute for a historical Git commit timeline.
+
+<!-- DEVELOPMENT_HISTORY_END -->
+
 ## Source provenance
 
-See `SOURCE_PROVENANCE.md` for implementation provenance and reconstruction notes where available.
+See [`SOURCE_PROVENANCE.md`](SOURCE_PROVENANCE.md) for the development history, Colab/Drive-to-package migration process, source provenance, and the distinction between historical competition experiments and the packaged public v2.1.0 runtime.
 
 ## Resumable artifact downloads
 
