@@ -79,7 +79,7 @@ Candidate Pool combines:
 - direct Harrier chunks;
 - direct BM25 chunks.
 
-### Current independent benchmark
+### Current held-out benchmark
 
 | Metric | Result |
 |---|---:|
@@ -110,7 +110,7 @@ chunk candidates
 → Evidence Aggregator
 ```
 
-### Independent benchmark impact
+### Held-out benchmark impact
 
 | Metric | Before V3 | V3 |
 |---|---:|---:|
@@ -237,7 +237,7 @@ Shipping PASS is a conservative release-gate metric, not answer accuracy.
 
 ---
 
-## Phase 11 — Independent finalholdout200 benchmark
+## Phase 11 — Held-out finalholdout200 benchmark
 
 Benchmark identity:
 
@@ -340,7 +340,7 @@ Frozen Hugging Face artifact revision:
 - SHA256 verification;
 - GitHub Release;
 - Hugging Face artifact repository;
-- independent benchmark documentation;
+- held-out benchmark documentation;
 - anonymous public reproducibility audit.
 
 ---

@@ -23,6 +23,20 @@ The retained materials primarily included:
 
 For this reason, the current repository does **not** claim to be a byte-for-byte snapshot of every historical Colab notebook or every intermediate competition experiment.
 
+<!-- TRAINING_SOURCE_AVAILABILITY_START -->
+
+## Training-source availability
+
+A complete canonical copy of the competition-era training source for all historical model adapters was not preserved.
+
+In particular, the public repository should not be interpreted as a byte-for-byte archive of the original training notebooks used for every V3 reranker or Stage2-v2 generator experiment.
+
+The public v2.1.0 repository focuses on the verified inference/runtime architecture, retained adapters and indexes, reproducible artifact identities, validation logic, and held-out evaluation.
+
+Where historical source was unavailable, the public package preserves verified runtime behavior and explicitly documents that provenance rather than presenting reconstructed code as original training source.
+
+<!-- TRAINING_SOURCE_AVAILABILITY_END -->
+
 ## Public v2.1.0 package
 
 After the competition, the verified components and runtime behavior were consolidated into the public `vietlegal_rag` Python package.
@@ -96,7 +110,7 @@ Whole legal Articles are not reconstructed and fed back into V3.
 
 ## Evaluation provenance
 
-The primary public v2.1 benchmark is the independent `finalholdout200` evaluation.
+The primary public v2.1 benchmark is the held-out `finalholdout200` evaluation.
 
 Key leakage controls:
 

@@ -2,7 +2,7 @@
 
 **Evidence-grounded Vietnamese legal question answering with hybrid retrieval, neural reranking, structured legal evidence, grounded generation, and citation validation.**
 
-VietLegal-RAG is an independent retrieval-augmented generation system for Vietnamese legal question answering. The runtime retrieves legal passages from a structured corpus, reranks chunk-level evidence, generates an answer, then independently validates legal citations and factual grounding before the answer is allowed through the final shipping gate.
+VietLegal-RAG is a retrieval-augmented generation system for Vietnamese legal question answering. The runtime retrieves legal passages from a structured corpus, reranks chunk-level evidence, generates an answer, then validates legal citations and factual grounding in a separate post-generation stage before the answer is allowed through the final shipping gate.
 
 <!-- PROJECT_CONTEXT_START -->
 
@@ -10,13 +10,13 @@ VietLegal-RAG is an independent retrieval-augmented generation system for Vietna
 
 VietLegal-RAG originated from **Task 2 — LegalQA of the UIT Data Science Challenge 2026**.
 
-The competition workflow was developed primarily in **Google Colab and Google Drive** during the competition period. After the competition, the verified system was further consolidated, extended, independently benchmarked, and packaged as the reproducible `VietLegal-RAG v2.1.0` portfolio release presented in this repository.
+The competition workflow was developed primarily in **Google Colab and Google Drive** during the competition period. After the competition, the verified system was further consolidated, extended, evaluated on a separate held-out benchmark, and packaged as the reproducible `VietLegal-RAG v2.1.0` public release presented in this repository.
 
 The original competition submission was developed individually.
 
 **Development history note:** the project was developed in Google Colab/Drive during the competition; this GitHub repository was created later as the packaged, documented, and reproducible public release. The short Git history therefore reflects the release-packaging phase, not the full experimental timeline.
 
-The current `finalholdout200` benchmark is a post-competition independent evaluation and should not be confused with competition leaderboard metrics.
+The current `finalholdout200` benchmark is a post-competition held-out evaluation and should not be confused with competition leaderboard metrics.
 
 <!-- PROJECT_CONTEXT_END -->
 
@@ -24,16 +24,24 @@ The current `finalholdout200` benchmark is a post-competition independent evalua
 
 ## My Contributions
 
-The original competition work and the subsequent public portfolio release were developed individually. My main engineering contributions include:
+For interview clarity, the work is separated into the original competition-era system development and the post-competition public-release engineering.
+
+### Competition-era system work
 
 - Designed and integrated the hybrid retrieval pipeline combining Dense Parent, VietLegal-Harrier Chunk, BM25 Parent, and BM25 Chunk retrieval.
 - Implemented and evaluated weighted Reciprocal Rank Fusion, parent-local expansion, and candidate-pool construction.
 - Developed and evaluated the V3 chunk-level neural reranking pipeline.
-- Integrated the Qwen3.5-2B + Stage2-v2 LoRA grounded-generation runtime.
+- Integrated the Qwen3.5-2B + Stage2-v2 LoRA grounded-generation workflow.
+
+### Post-competition public-release engineering
+
+- Consolidated the verified runtime into the `vietlegal_rag` Python package.
 - Designed the structured legal Evidence Aggregator and the citation/grounding validation pipeline, including deterministic citation repair.
-- Built leakage-checked evaluation protocols for retrieval, evidence, citation, grounding, and runtime performance.
-- Profiled and optimized runtime I/O, including moving indexes and databases from mounted Google Drive to local SSD.
-- Packaged the public v2.1.0 release with resumable artifact downloads, SHA256 verification, frozen artifact revisions, GitHub release documentation, and Hugging Face artifact hosting.
+- Built the leakage-checked `finalholdout200` evaluation protocol for retrieval, evidence, citation, grounding, and runtime performance.
+- Profiled runtime I/O and reduced portable pipeline latency by staging indexes, SQLite stores, and embeddings from mounted Drive to local SSD.
+- Packaged the public v2.1.0 release with resumable downloads, SHA256 verification, frozen artifact revisions, GitHub release documentation, and Hugging Face artifact hosting.
+
+A complete canonical copy of the competition-era training source for all historical adapters was not preserved; see [`SOURCE_PROVENANCE.md`](SOURCE_PROVENANCE.md).
 
 <!-- PERSONAL_CONTRIBUTIONS_END -->
 
@@ -111,11 +119,19 @@ pip install -e . --no-deps
 
 CUDA is required by the canonical neural runtime.
 
-## Runtime artifacts
+## Runtime artifacts and public download
 
-The current runtime artifact bundle contains 151 files totaling 4.592 GB.
+The current runtime artifact bundle contains **151 files totaling 4.59 GiB (~4.93 GB; exactly 4,930,429,361 bytes)**.
 
-Integrity metadata is stored in `artifact_manifest.json`.
+Integrity metadata is stored in `artifact_manifest.json`. Project-specific runtime artifacts are hosted publicly on Hugging Face at `gphs09/VietLegal-RAG-artifacts` and are pinned by repository commit in the manifest.
+
+Download the public artifact bundle:
+
+```bash
+python scripts/download_artifacts.py
+```
+
+The downloader uses the commit-pinned URLs recorded in `artifact_manifest.json`.
 
 For an existing local artifact source:
 
@@ -125,7 +141,7 @@ python scripts/download_artifacts.py \
   --artifact-root ./artifacts
 ```
 
-Then verify the runtime layout:
+Verify the runtime layout:
 
 ```bash
 python scripts/run_pipeline.py \
@@ -141,19 +157,7 @@ python scripts/run_pipeline.py \
   --question "Thời điểm nào sẽ thông báo phạm nhân hết hạn chấp hành án phạt tù?"
 ```
 
-## Public artifact download status
-
-**Project-specific runtime artifacts are hosted publicly on Hugging Face at `gphs09/VietLegal-RAG-artifacts` and are pinned by repository commit in `artifact_manifest.json`.**
-
-Therefore this command:
-
-```bash
-python scripts/download_artifacts.py
-```
-
-downloads the project-specific runtime bundle using the commit-pinned URLs recorded in `artifact_manifest.json`.
-
-Base neural models are fetched from Hugging Face; project-specific LoRA adapters, indexes, metadata, and SQLite stores are described by the artifact manifest.
+Base neural models are fetched from their upstream Hugging Face repositories. Project-specific adapters, indexes, metadata, and SQLite stores are described by the artifact manifest.
 
 ## Validation policy
 
@@ -211,9 +215,42 @@ Full methodology and results:
 
 <!-- V21_OFFICIAL_BENCHMARK_END -->
 
+<!-- LIMITATIONS_START -->
+
+## Limitations & Future Work
+
+- Only **42.5% of answers (85/200)** pass the conservative shipping gate; many blocked cases involve citation failures or unsupported citations that the repair layer intentionally does not guess.
+- Trusted Parent Citation Recall is **12.81%** and Citation Coverage is **41.03%**.
+- Evidence and citation metrics use answer-aware **Silver Oracle** labels rather than human-annotated citation gold.
+- Generation remains slow on a Tesla T4 at approximately **60 s/query**; the canonical neural runtime requires CUDA.
+- A complete canonical copy of the competition-era training source for all historical adapters was not preserved. This repository provides the cleaned and reproducible v2.1 inference/runtime package; see [`SOURCE_PROVENANCE.md`](SOURCE_PROVENANCE.md).
+- Planned v2.2 work focuses on citation recall/coverage, claim–evidence alignment, unsupported-citation handling, shipping-gate calibration, and generation latency.
+
+<!-- LIMITATIONS_END -->
+
+<!-- LEGAL_DISCLAIMER_START -->
+
+## Legal Disclaimer
+
+VietLegal-RAG is a research and engineering project and is **not a substitute for professional legal advice**. Generated answers may be incomplete, outdated, or incorrect. Users should verify applicable law and consult a qualified legal professional when needed.
+
+<!-- LEGAL_DISCLAIMER_END -->
+
+<!-- LICENSE_INFO_START -->
+
+## License and third-party components
+
+The source code in this repository is released under the **Apache License 2.0**. See [`LICENSE`](LICENSE).
+
+Upstream models, model weights, datasets, and legal-text sources retain their own licenses and terms. This repository does not relicense third-party materials.
+
+See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for model license references and the current corpus-licensing note.
+
+<!-- LICENSE_INFO_END -->
+
 ## Evaluation
 
-The independent evaluation framework is designed around retrieval, evidence, citation, grounding, and system metrics, including:
+The evaluation framework is designed around retrieval, evidence, citation, grounding, and system metrics, including:
 
 - Recall@K, MRR@K, nDCG@K
 - Evidence Recall / Evidence Precision
@@ -222,7 +259,7 @@ The independent evaluation framework is designed around retrieval, evidence, cit
 - Evidence Coverage
 - latency, throughput, RAM and VRAM
 
-A dedicated independent benchmark is separate from the runtime smoke tests described above.
+The held-out benchmark is separate from the runtime smoke tests described above.
 
 <!-- DEVELOPMENT_HISTORY_START -->
 
@@ -230,7 +267,7 @@ A dedicated independent benchmark is separate from the runtime smoke tests descr
 
 A milestone-based engineering history is available in [`docs/DEVELOPMENT_LOG.md`](docs/DEVELOPMENT_LOG.md).
 
-It summarizes the progression from the competition-era LegalQA workflow through hybrid retrieval, V3 reranking, structured evidence aggregation, grounded generation, citation validation, deterministic repair, independent benchmarking, runtime profiling, and the reproducible public release.
+It summarizes the progression from the competition-era LegalQA workflow through hybrid retrieval, V3 reranking, structured evidence aggregation, grounded generation, citation validation, deterministic repair, held-out benchmarking, runtime profiling, and the reproducible public release.
 
 The development log is an engineering milestone record derived from retained experiment artifacts and verified benchmark outputs. It is not presented as a substitute for a historical Git commit timeline.
 

@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "vietlegal-rag"
 version = "2.1.0"
 description = "Hybrid evidence-grounded Vietnamese legal QA reference implementation"
+license = { file = "LICENSE" }
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]
